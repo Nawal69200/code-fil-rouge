@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="../pages/index.html">
+                    <img src="../../images/logo.png" alt="logo">
+                </a>
+                <div class="dropdown ms-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="../pages/connexion.html">CONNEXION</a></li>
+                        <li><a class="dropdown-item" href="../pages/inscription.html">INSCRIPTION</a></li>
+                    </ul>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../pages/index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/evenements.html">Evénements</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/gallerie_photos.html">Galerie photos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/favoris.html">Favoris</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/contact.html">Contactez-nous</a></li>
+                    </ul>
+                    <div class="search-form ms-auto">
+                        <form class="d-flex">
+                            <input class="form-control" type="search" placeholder="Rechercher" aria-label="Search">
+                            <button class="btn btn-success" type="submit">
+                                <i class="bi bi-search"></i> Rechercher
+                            </button>
+                        </form>
+                    </div>
+                </div>  
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container my-5 bg-white p-4 rounded w-75">
+            <div class="row mb-4">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <h3 class="border-bottom border-danger pb-2">Détails de l'événement</h3>
+                    <p><strong>Date:</strong> 15 septembre 2024</p>
+                    <p><strong>Lieu:</strong> Boulangerie Artisanale "Le Fournil Doré", Paris</p>
+                    <p><strong>Horaires:</strong> 9h00 - 14h00</p>
+                    <p><strong>Prix:</strong> 45€ par personne (matériel et déjeuner inclus)</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 mt-5">
+                    <img src="../../images/pain_maison.jpg" alt="Pain artisanal" class="img-fluid rounded">
+                </div>
+            </div>
+
+            <h3 class="border-bottom border-danger pb-2">Description</h3>
+            <p>Rejoignez-nous pour un atelier de fabrication de pain où vous découvrirez les secrets de la boulangerie artisanale française ! Guidés par notre maître boulanger, vous apprendrez à préparer différentes variétés de pains et à maîtriser les techniques traditionnelles de panification.</p>
+    
+            <h3 class="border-bottom border-danger pb-2">Au programme</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Introduction à l'art de la boulangerie française</li>
+                <li class="list-group-item">Préparation de plusieurs types de pains : baguette, pain de campagne, pain aux céréales</li>
+                <li class="list-group-item">Techniques de pétrissage, de levée et de cuisson</li>
+                <li class="list-group-item">Utilisation de différents types de farines et levures</li>
+                <li class="list-group-item">Dégustation des pains fraîchement cuits accompagnés de vins et fromages français</li>
+            </ul>
+    
+            <h3 class="border-bottom border-danger pb-2">Variétés de pains explorées</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Baguette traditionnelle</li>
+                <li class="list-group-item">Pain de campagne</li>
+                <li class="list-group-item">Pain aux céréales</li>
+            </ul>
+    
+            <h3 class="border-bottom border-danger pb-2">Ce que vous apprendrez</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Les spécificités des différentes variétés de pain</li>
+                <li class="list-group-item">La sélection et l'utilisation des ingrédients</li>
+                <li class="list-group-item">Les techniques de pétrissage et de levée</li>
+                <li class="list-group-item">Les astuces pour une cuisson parfaite</li>
+                <li class="list-group-item">Comment reproduire ces pains chez vous</li>
+            </ul>
+        </div>
+    
+        <div class="container my-5 p-4 col-12 col-sm-10 col-md-8 col-lg-6 custom-form-style">
+            <h3 class="text-center border-bottom border-danger pb-2">Formulaire d'inscription</h3>
+            <p>Réservez votre place dès maintenant pour cet atelier de fabrication de pain !</p>
+            <form id="registrationForm" action="" method="POST">
+                <div class="mb-3">
+                    <label for="name1" class="form-label">Nom complet <span class="text-danger">*</span>:</label>
+                    <input type="text" class="form-control" id="name1" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="username1" class="form-label">Nom d'utilisateur:</label>
+                    <input type="text" class="form-control" id="username1" name="username">
+                </div>
+                <div class="mb-3">
+                    <label for="email1" class="form-label">Adresse e-mail <span class="text-danger">*</span>:</label>
+                    <input type="email" class="form-control" id="email1" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone1" class="form-label">Numéro de téléphone <span class="text-danger">*</span>:</label>
+                    <input type="text" class="form-control" id="phone1" name="phone" pattern="0\d{9}" title="Veuillez entrer un numéro de téléphone valide de 10 chiffres commençant par 0" required>
+                </div>
+                <div class="mb-3">
+                    <label for="experience1" class="form-label">Niveau d'expérience en boulangerie <span class="text-danger">*</span>:</label>
+                    <select class="form-select" id="experience1" name="experience" required>
+                        <option value="">Choisissez une option</option>
+                        <option value="debutant">Débutant</option>
+                        <option value="intermediaire">Intermédiaire</option>
+                        <option value="avance">Avancé</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="dietary1" class="form-label">Restrictions alimentaires ou allergies:</label>
+                    <textarea class="form-control" id="dietary1" name="dietary" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="expectations1" class="form-label">Quels types de pain vous intéressent le plus ?</label>
+                    <textarea class="form-control" id="expectations1" name="expectations" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Je m'inscris</button>
+            </form>
+        </div>
+        
+    </main>
+            
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 text-center">
+                    <p class="mt-3">© 2024 Recettes X. Tous droits réservés.</p>
+                    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mb-3">
+                        <a href="../pages/politique_confidentialite.html" class="text-dark text-decoration-none mx-2">Politique de confidentialité</a>
+                        <span class="d-none d-md-block">|</span>
+                        <a href="../pages/condition_utilisation.html" class="text-dark text-decoration-none mx-2">Conditions d'utilisation</a>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>

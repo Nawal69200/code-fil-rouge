@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="../pages/index.html">
+                    <img src="../../images/logo.png" alt="logo">
+                </a>
+                <div class="dropdown ms-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="../pages/connexion.html">CONNEXION</a></li>
+                        <li><a class="dropdown-item" href="../pages/inscription.html">INSCRIPTION</a></li>
+                    </ul>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../pages/index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/evenements.html">Evénements</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/gallerie_photos.html">Galerie photos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/favoris.html">Favoris</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/contact.html">Contactez-nous</a></li>
+                    </ul>
+                    <div class="search-form ms-auto">
+                        <form class="d-flex">
+                            <input class="form-control" type="search" placeholder="Rechercher" aria-label="Search">
+                            <button class="btn btn-success" type="submit">
+                                <i class="bi bi-search"></i> Rechercher
+                            </button>
+                        </form>
+                    </div>
+                </div>  
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container my-5 bg-white p-4 rounded w-75">
+            <div class="row mb-4">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <h3 class="border-bottom border-danger pb-2">Détails de l'événement</h3>
+                    <p><strong>Date:</strong> 19 et 20 août 2024</p>
+                    <p><strong>Lieu:</strong> Jardin des Plantes, Lyon</p>
+                    <p><strong>Horaires:</strong> 10h00 - 18h00</p>
+                    <p><strong>Entrée:</strong> Gratuite (Démonstrations et dégustations incluses)</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 mt-5">
+                    <img src="../../images/marche.jpg" alt="Marché chinois avec stands de nourriture et lanternes" class="img-fluid rounded">
+                </div>
+            </div>
+            
+            <h3 class="border-bottom border-danger pb-2">Description</h3>
+            <p>Venez découvrir la richesse de la culture chinoise lors de notre marché éphémère chinois ! Parcourez les différents stands proposant une variété de produits authentiques et participez à des ateliers interactifs pour une expérience immersive.</p>
+    
+            <h3 class="border-bottom border-danger pb-2">Au programme</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Introduction aux traditions et à la culture chinoise</li>
+                <li class="list-group-item">Démonstrations de cuisine chinoise par des chefs renommés</li>
+                <li class="list-group-item">Ateliers de calligraphie et de peinture chinoise</li>
+                <li class="list-group-item">Stands de produits artisanaux et alimentaires</li>
+                <li class="list-group-item">Spectacles de danse et de musique traditionnelle chinoise</li>
+            </ul>
+    
+            <h3 class="border-bottom border-danger pb-2">Stands et Ateliers</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Gastronomie : Raviolis, canard laqué, nouilles sautées</li>
+                <li class="list-group-item">Artisanat : Poteries, soieries, éventails peints à la main</li>
+                <li class="list-group-item">Bien-être : Ateliers de Tai Chi et de médecine traditionnelle chinoise</li>
+            </ul>
+    
+            <h3 class="border-bottom border-danger pb-2">Ce que vous découvrirez</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Les saveurs authentiques de la cuisine chinoise</li>
+                <li class="list-group-item">Les techniques traditionnelles de l'artisanat chinois</li>
+                <li class="list-group-item">Les secrets de la culture et des traditions chinoises</li>
+                <li class="list-group-item">L'art de vivre à la chinoise : santé et bien-être</li>
+                <li class="list-group-item">Des astuces pour intégrer des éléments de la culture chinoise dans votre quotidien</li>
+            </ul>
+        </div>
+    
+        <div class="container my-5 p-4 col-12 col-sm-10 col-md-8 col-lg-6 custom-form-style">
+            <h3 class="text-center border-bottom border-danger pb-2">Formulaire d'inscription</h3>
+            <p>Réservez votre place dès maintenant pour ce voyage culturel à travers la Chine !</p>
+            <form id="registrationForm3" action="" method="POST">
+                <div class="mb-3">
+                    <label for="name3" class="form-label">Nom complet <span class="text-danger">*</span>:</label>
+                    <input type="text" class="form-control" id="name3" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="username3" class="form-label">Nom d'utilisateur:</label>
+                    <input type="text" class="form-control" id="username3" name="username">
+                </div>
+                <div class="mb-3">
+                    <label for="email3" class="form-label">Adresse e-mail <span class="text-danger">*</span>:</label>
+                    <input type="email" class="form-control" id="email3" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone3" class="form-label">Numéro de téléphone <span class="text-danger">*</span>:</label>
+                    <input type="text" class="form-control" id="phone3" name="phone" pattern="\d{10}" title="Veuillez entrer un numéro de téléphone valide de 10 chiffres" required>
+                </div>
+                <div class="mb-3">
+                    <label for="experience3" class="form-label">Niveau de connaissance de la culture chinoise <span class="text-danger">*</span>:</label>
+                    <select class="form-select" id="experience3" name="experience" required>
+                        <option value="">Choisissez une option</option>
+                        <option value="debutant">Débutant</option>
+                        <option value="intermediaire">Intermédiaire</option>
+                        <option value="avance">Avancé</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="dietary3" class="form-label">Restrictions alimentaires ou allergies:</label>
+                    <textarea class="form-control" id="dietary3" name="dietary" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="expectations3" class="form-label">Quels aspects de la culture chinoise vous intéressent le plus ?</label>
+                    <textarea class="form-control" id="expectations3" name="expectations" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Je m'inscris</button>
+            </form>
+        </div>                        
+    </main>
+            
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 text-center">
+                    <p class="mt-3">© 2024 Recettes X. Tous droits réservés.</p>
+                    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mb-3">
+                        <a href="../pages/politique_confidentialite.html" class="text-dark text-decoration-none mx-2">Politique de confidentialité</a>
+                        <span class="d-none d-md-block">|</span>
+                        <a href="../pages/condition_utilisation.html" class="text-dark text-decoration-none mx-2">Conditions d'utilisation</a>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>

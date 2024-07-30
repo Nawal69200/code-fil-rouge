@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recettes X</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">
+                    <img src="../../images/logo.png" alt="logo">
+                </a>
+                <div class="dropdown ms-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="./connexion.html">CONNEXION</a></li>
+                        <li><a class="dropdown-item" href="./inscription.html">INSCRIPTION</a></li>
+                    </ul>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="evenements.html">Evénements</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallerie_photos.html">Galerie photos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="favoris.html">Favoris</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contactez-nous</a></li>
+                    </ul>
+                    <div class="search-form ms-auto">
+                        <form class="d-flex">
+                            <input class="form-control" type="search" placeholder="Rechercher" aria-label="Search">
+                            <button class="btn btn-success" type="submit">
+                                <i class="bi bi-search"></i> Rechercher
+                            </button>
+                        </form>
+                    </div>
+                </div>  
+            </div>
+        </nav>
+    </header>
+ 
+    <main class="container">
+        <div class="text-center">
+            <h1>Explorez, cuisinez, dégustez</h1>
+            <p>Les meilleures recettes à portée de clic !</p>
+        </div>
+        <hr>
+
+        <div class="container mt-5 text-center">
+            <h3 class="mb-4">Recette de la semaine</h3>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="card border-black border-5">
+                        <div class="card-body">
+                            <img src="/images/boeuf_saute.jpg" class="card-img-top object-fit-cover" alt="boeuf sauté aux légumes">
+                            <h5 class="card-title mt-3">Boeuf sauté aux légumes et graines de sésame</h5>
+                            <p class="card-text">Découvrez notre délicieux Bœuf Sauté aux Légumes et Graines de Sésame, un plat savoureux qui allie la tendreté du bœuf mariné à la perfection avec la fraîcheur des légumes croquants et un mélange d'épices exotiques.</p>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <span class="ms-2">(12 avis)</span>
+                                </div>
+                            <div class="mt-3">
+                                <a href="../recettes/boeuf_saute.html" class="btn btn-warning">Voir la recette</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="container mt-5">
+            <div class="text-center mb-4">
+                <h3>Actus, tendance</h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-11 col-md-10 col-lg-8">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/images/noix.jpg" class="d-block w-100 carousel-img" alt="Les noix">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">Pourquoi devrait-on manger davantage de noix ?</h5>
+                                    <p>Les noix sont riches en acides gras oméga-3, bénéfiques pour la santé cardiovasculaire.</p>
+                                    <a href="../carousel/noix.html" class="btn btn-outline-warning">Lire plus</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/avocats.jpg" class="d-block w-100 carousel-img" alt="Les avocats">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">Les bienfaits des avocats</h5>
+                                    <p>Les avocats contiennent des fibres, aidant à la digestion.</p>
+                                    <a href="../carousel/avocats.html" class="btn btn-outline-warning">Lire plus</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/piments.jpg" class="d-block w-100 carousel-img" alt="Les piments">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">Les vertus du piment</h5>
+                                    <p>Les piments possèdent des propriétés anti-inflammatoires.</p>
+                                    <a href="../carousel/piments.html" class="btn btn-outline-warning">Lire plus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Précédent</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Suivant</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container my-5">
+            <div class="row text-center">
+                <!-- Entrée -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <h3 class="mb-4">Entrées</h3>
+                    <div class="card border-black border-5 d-flex flex-column">
+                        <img src="/images/sushis2.jpg" class="card-img-top object-fit-cover" alt="Assiette de sushis">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mt-3">Sushis</h5>
+                            <p class="card-text text-center">Recette de sushis. Idéale pour débuter votre repas.</p>
+                            <div class="mt-auto text-center">
+                                <div class="d-flex justify-content-center">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <span class="ms-2">(15 avis)</span>
+                                </div>
+                                <a href="../recettes/sushis.html" class="btn btn-warning mt-3">Voir la recette</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Plat -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <h3 class="mb-4">Plats</h3>
+                    <div class="card border-black border-5 d-flex flex-column">
+                        <img src="/images/chakchouka.jpg" class="card-img-top object-fit-cover" alt="Chakchouka">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mt-3">Chakchouka</h5>
+                            <p class="card-text text-center">Plat maghrébin à base de tomates, d'oeufs, de poivrons et d'oignons.</p>
+                            <div class="mt-auto text-center">
+                                <div class="d-flex justify-content-center">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <span class="ms-2">(7 avis)</span>
+                                </div>
+                                <a href="../recettes/chakchouka.html" class="btn btn-warning mt-3">Voir la recette</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Dessert -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <h3 class="mb-4">Desserts</h3>
+                    <div class="card border-black border-5  d-flex flex-column">
+                        <img src="/images/tarte_coco.jpg" class="card-img-top object-fit-cover" alt="tarte à la noix de coco">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mt-3">Tarte à la noix de coco</h5>
+                            <p class="card-text text-center">Délicieuse tarte à la noix de coco, crémeuse et exotique. Un régal.</p>
+                            <div class="mt-auto text-center">
+                                <div class="d-flex justify-content-center">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <span class="ms-2">(40 avis)</span>
+                                </div>
+                                <a href="../recettes/tarte_coco.html" class="btn btn-warning mt-3">Voir la recette</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Boisson -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <h3 class="mb-4">Boissons</h3>
+                    <div class="card border-black border-5 d-flex flex-column">
+                        <img src="/images/mojito_orange.jpg" class="card-img-top object-fit-cover" alt="mojito orange sanguine">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mt-3">Mojito à l'orange</h5>
+                            <p class="card-text text-center">Un mojito rafraîchissant à l'orange sanguine, parfait pour l'été.</p>
+                            <div class="mt-auto text-center">
+                                <div class="d-flex justify-content-center">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <span class="ms-2">(25 avis)</span>
+                                </div>
+                                <a href="../recettes/mojito_orange.html" class="btn btn-warning mt-3">Voir la recette</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="text-center mb-4">
+                <h3>Vidéo du jour</h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/Mkx4iRqcbr4?si=ArEwfaYzLE5BQO-g" title="YouTube video player" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container my-5">
+            <!-- Recettes de saisons -->
+            <h3 class="mb-4 text-center">Recettes de saisons</h3>
+            <div class="card border-black border-5 mb-3 mx-auto col-12 col-md-11 col-lg-10">
+                <div class="d-flex flex-column flex-md-row h-100">
+                    <div class="col-12 col-md-4 d-flex">
+                        <img src="/images/nouilles.jpg" class="img-fluid rounded-start w-100 h-100 object-fit-cover" alt="Nouilles aux crevettes">
+                    </div>
+                    <div class="col-12 col-md-8 d-flex flex-column">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Nouilles aux crevettes et oeufs de caille</h5>
+                            <p class="card-text text-center flex-grow-1">Savourez notre plat exquis de Nouilles aux Crevettes et oeufs de cailles, aux herbes fraîches une harmonie parfaite entre terre et mer. Les nouilles al dente sont sautées avec des crevettes juteuses, rehaussées par des épices délicates et une sauce savoureuse.</p>
+                            <div class="d-flex justify-content-center align-items-center mt-auto">
+                                <div class="me-2">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                </div>
+                                <span>(7 avis)</span>
+                            </div>
+                            <div class="mt-3 text-center">
+                                <a href="../recettes/nouilles_crevettes.html" class="btn btn-warning">Voir la recette</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Recettes végétariennes -->
+            <h3 class="mb-4 mt-5 text-center">Recettes végétariennes</h3>
+            <div class="card border-black border-5 mb-3 mx-auto col-12 col-md-11 col-lg-10">
+                <div class="d-flex flex-column flex-md-row h-100">
+                    <div class="col-12 col-md-4 d-flex">
+                        <img src="/images/pates_creme.jpg" class="img-fluid rounded-start w-100 h-100 object-fit-cover" alt="Pâtes à la crème">
+                    </div>
+                    <div class="col-12 col-md-8 d-flex flex-column">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Pâtes à la crème</h5>
+                            <p class="card-text text-center flex-grow-1">Des pâtes à la crème onctueuse, rehaussées de fromage fondu et d'une touche d'ail, offrent un repas réconfortant et délicieux. Idéales pour un dîner rapide, elles se marient parfaitement avec des herbes fraîches et une pincée de poivre noir pour une saveur irrésistible.</p>
+                            <div class="d-flex justify-content-center align-items-center mt-auto">
+                                <div class="me-2">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                </div>
+                                <span>(12 avis)</span>
+                            </div>
+                            <div class="mt-3 text-center">
+                                <a href="../recettes/pates_creme.html" class="btn btn-warning">Voir la recette</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Recettes populaires -->
+            <h3 class="mb-4 mt-5 text-center">Recettes populaires</h3>
+            <div class="card border-black border-5 mb-3 mx-auto col-12 col-md-11 col-lg-10">
+                <div class="d-flex flex-column flex-md-row h-100">
+                    <div class="col-12 col-md-4 d-flex">
+                        <img src="/images/burger.jpg" class="img-fluid rounded-start w-100 h-100 object-fit-cover" alt="Burger du chef">
+                    </div>
+                    <div class="col-12 col-md-8 d-flex flex-column">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Burger du chef</h5>
+                            <p class="card-text text-center flex-grow-1">Ce burger appétissant se distingue par son pain brioché doré, ses tranches juteuses de bœuf de première qualité, et son mélange savoureux de fromages fondants. Garnitures fraîches et colorées, comme la laitue croquante, les tomates mûres et les oignons caramélisés, se marient parfaitement avec une sauce maison crémeuse.</p>
+                            <div class="d-flex justify-content-center align-items-center mt-auto">
+                                <div class="me-2">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                </div>
+                                <span>(25 avis)</span>
+                            </div>
+                            <div class="mt-3 text-center">
+                                <a href="../recettes/burger.html" class="btn btn-warning">Voir la recette</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5 text-center">
+            <h3 class="mb-4">Derniers Ajouts</h3>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-6">
+                        <div class="card border-black border-5">
+                            <div class="card-body d-flex flex-column">
+                                <img src="/images/salade_poulet-grille.jpg" class="card-img-top object-fit-cover" alt="Salade au poulet grillé">
+                                <h5 class="card-title mt-3">Salade gourmande au poulet grillé</h5>
+                                <p class="card-text">Cette salade gourmande au poulet grillé est un mélange parfait de saveurs et de textures. Elle combine des morceaux de poulet juteux, des cubes de fromage, des tomates cerises, et une variété de graines et de légumes croquants. Un repas équilibré et délicieux pour toutes les occasions.</p>
+                                <div class="d-flex flex-column align-items-center mt-auto">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="me-2">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star text-warning"></i>
+                                            <i class="bi bi-star text-warning"></i>
+                                        </div>
+                                        <span>(5 avis)</span>
+                                    </div>
+                                    <a href="../recettes/salade_poulet_grille.html" class="btn btn-warning mt-3">Voir la recette</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <form method="GET" action="" class="newsletter my-5 bg-light p-4 text-center mx-auto col-11 col-md-10 col-lg-8">
+            <h4 class="text-primary">Abonnez-vous à notre newsletter</h4>
+            <label for="email" class="form-label">Recevez nos dernières recettes directement dans votre boîte mail.</label>
+            <div class="input-group mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Entrez votre email" required>
+                <button id="submit-button" class="btn btn-primary" type="button">Envoyer</button>
+            </div>
+        </form>         
+           
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 text-center">
+                    <p class="mt-3">© 2024 Recettes X. Tous droits réservés.</p>
+                    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mb-3">
+                        <a href="politique_confidentialite.html" class="text-dark text-decoration-none mx-2">Politique de confidentialité</a>
+                        <span class="d-none d-md-block">|</span>
+                        <a href="condition_utilisation.html" class="text-dark text-decoration-none mx-2">Conditions d'utilisation</a>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>
