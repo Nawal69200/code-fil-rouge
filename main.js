@@ -513,3 +513,12 @@ document.addEventListener("DOMContentLoaded", function() {
   validerFormulaire('registrationForm2', 'name2', 'username2', 'email2', 'phone2', 'experience2', 'dietary2', 'expectations2');
   validerFormulaire('registrationForm3', 'name3', 'username3', 'email3', 'phone3', 'experience3', 'dietary3', 'expectations3');
 });
+
+
+///     CONTENENU DANS FORMULAIRE DE PAGE FAVORI 
+document.getElementById('commentForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Merci pour votre commentaire ! Il sera publié après modération.');
+    this.reset();
+});
+
